@@ -15,6 +15,3 @@ CREATE DATABASE kupipodariday;
 ```bash
 GRANT ALL PRIVILEGES ON DATABASE kupipodariday TO student;
 ```
-```bash
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-```

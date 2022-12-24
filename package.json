@@ -1,8 +1,8 @@
 {
   "name": "kupipodariday",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Kupipodariday project API",
+  "author": "Mikhail Nenashev",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

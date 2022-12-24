@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { User } from '../users/entities/user.entity';
 import { UsersService } from '../users/users.service';
-import * as bcrypt from 'bcrypt';
+import { compare } from '../utils/helpers';
 
 @Injectable()
 export class AuthService {
@@ -23,9 +23,6 @@ export class AuthService {
       throw new NotFoundException('Некорректные данные');
     }
 
-    return bcrypt.compare(password, user.password).then((matched) => {
-      if (!matched) return null;
-      return user;
-    });
+    return await compare(password, user);
   }
 }

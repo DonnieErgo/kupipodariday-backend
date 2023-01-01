@@ -1,7 +1,6 @@
-# REST API for web app КупиПодариДай
-
+# REST API for web app KupiPodariDay
 ## Stack
-- [описание API сервиса](https://app.swaggerhub.com/apis/zlocate/KupiPodariDay/1.0.0)
+- [Swagger API](https://app.swaggerhub.com/apis/zlocate/KupiPodariDay/1.0.0)
 - Nest.js/TypeScript
 - PostgreSQL
 
